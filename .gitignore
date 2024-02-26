@@ -131,3 +131,9 @@ dist
 
 # local script
 start.sh
+
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+*/**/.DS_Store
+
