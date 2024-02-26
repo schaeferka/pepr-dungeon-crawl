@@ -4,33 +4,22 @@
 
 ## Play the classic roguelike dungeon crawler BrogueCE in your Kubernetes cluster with Pepr acting as the dungeon master to validate and mutate your game/Kubernetes objects
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+</br>
+</br>
+</br>
+
 **View of terminal and game running in VNC viewer**
 <img align="center" width="100%" src="_images/game-view.png">
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+
+</br>
+
 **Pepr Monitor view from `npx pepr monitor`**
 <img align="center" width="100%" src="_images/npx-pepr-monitor.png">
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+
+</br>
+
 **K9s view of the cluster**
 <img align="center" width="100%" src="_images/k9s-screenshot.png">
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 ## Introduction
 
@@ -111,16 +100,19 @@ The Brogue game is a deployment that runs a modified version of the classic rogu
   ```bash
   cd pepr-dungeon-master/pepr
   ```
+
 5. Deploy the Pepr Dungeon Master module to your cluster:
 
   ```bash
   npx pepr build
   ```
+
 6. Return to the root of the `pepr-dungeon-crawl` directory:
 
   ```bash
   cd ../..
   ```
+
 7. Use the deploy script to apply the manifests to your cluster:
 
   ```bash
