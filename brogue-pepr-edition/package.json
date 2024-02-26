@@ -1,0 +1,15 @@
+{
+    "name": "dungeon-crawl-app",
+    "version": "1.0.0",
+    "description": "A Kubernetes-managed dungeon crawl app",
+    "keywords": [
+      "dungeon",
+      "crawl",
+      "kubernetes"
+    ],
+    "author": "Kim Schaefer",
+    "dependencies": {
+      "@kubernetes/client-node": "^0.16.1",
+      "express": "^4.17.1"
+    }
+  }

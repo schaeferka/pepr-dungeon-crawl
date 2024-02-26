@@ -1,0 +1,30 @@
+389	1707037644	Killed by a pink jelly on depth 4.
+350	1706990979	Killed by a pink jelly on depth 4.
+337	1707038610	Killed by a goblin on depth 3.
+281	1706932603	Killed by a pink jelly on depth 4.
+189	1706931130	Killed by a cloud of caustic gas on depth 2.
+144	1707104276	Killed by a jackal on depth 3.
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)
+0	0	(empty entry)

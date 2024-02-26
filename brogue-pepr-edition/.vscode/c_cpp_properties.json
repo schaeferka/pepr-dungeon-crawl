@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "macos-clang-arm64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/homebrew/Cellar/libmicrohttpd/1.0.0/include",
+                "/opt/homebrew/Cellar/jansson/2.14/include",
+                "/opt/homebrew/Cellar/sdl2/2.30.0/include",
+                "/opt/homebrew/Cellar/sdl2_image/2.8.2/include",
+                "/opt/homebrew/Cellar/sdl2_image/2.8.2/include/SDL2",
+                "/opt/homebrew/Cellar/sdl2/2.30.0/include/SDL2",
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1",
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
+            "intelliSenseMode": "macos-clang-arm64",
+            "compilerArgs": [
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: notification-service
+  namespace: pepr-dungeon-crawl
+spec:
+  selector:
+    app: brogue
+  ports:
+  - protocol: TCP
+    port: 8889
+    targetPort: 8889

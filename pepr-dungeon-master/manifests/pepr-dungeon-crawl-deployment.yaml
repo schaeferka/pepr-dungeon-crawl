@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: brogue-game
+  namespace: pepr-dungeon-crawl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: brogue
+  template:
+    metadata:
+      labels:
+        app: brogue
+    spec:
+      serviceAccountName: monsties-sa
+      containers:
+      - name: brogue
+        image: kaschaefer/pepr-dungeon-crawl:0.20
+        ports:
+        - containerPort: 5900 # for the game/VNC
+        - containerPort: 8889 # Match the port your server listens on
+        env:
+          - name: DISPLAY
+            value: ":1"
+          - name: SDL_VIDEODRIVER
+            value: "x11"
+        volumeMounts: # Specify where to mount the volume inside the container
+        - name: game-files
+          mountPath: "bin/client" # Specify the target path in the container
+      volumes:
+      - name: game-files
+        hostPath:
+          path: "/Users/kas/projects/pepr-dungeon-crawl/brogue-pepr-edition/bin" # Adjust if necessary

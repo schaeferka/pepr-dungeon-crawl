@@ -1,0 +1,1 @@
+-lm -L/opt/homebrew/Cellar/libmicrohttpd/1.0.0/lib -L/opt/homebrew/Cellar/jansson/2.14/lib -lmicrohttpd -ljansson -lpthread -L/opt/homebrew/lib -lSDL2 -lSDL2_image -L/opt/homebrew/opt/sdl2/lib -L/opt/homebrew/opt/sdl2_image/lib -lSDL2 -lSDL2_image  -L/opt/homebrew/lib -lSDL2 -lSDL2_image 

@@ -19,8 +19,7 @@ I've been spending a lot of time working with [Pepr](https://github.com/defenseu
     - [TODO](#todo)
   - [Installation](#installation)
     - [Prerequisites](#prerequisites)
-    - [Install the Pepr Dungeon Master Module](#install-the-pepr-dungeon-master-module)
-    - [Install the BrogueCE - Pepr Edition Game](#install-the-broguece---pepr-edition-game)
+    - [Installation Steps](#installation-steps)
   - [Play Pepr Dungeon Crawl](#play-pepr-dungeon-crawl)
   - [Tips](#tips)
 
@@ -57,34 +56,57 @@ The Brogue game is a deployment that runs a modified version of the classic rogu
   k3d cluster create
   ```
 
-### Install the Pepr Dungeon Master Module
+- kubectl installed and configured to use your cluster. If you don't have kubectl installed, you can install it using [Homebrew](https://brew.sh) with the following command:
 
-The Pepr Dungeon Master module is a Pepr module that uses validating and mutating webhooks to interact with the Brogue game deployment. The initial configuration of the Pepr Dungeon Master module is in the `pepr-dungeon-master` directory of this repository.
+  ```bash
+  brew install kubectl
+  ```
 
-To install the Pepr Dungeon Master module, navigate to the `pepr-dungeon-master` directory and run the following commands:
+### Installation Steps
 
-```bash
-npx pepr build
-kubectl apply -f pepr-dungeon-master.yaml
-```
+1. Clone this repository:
 
-### Install the BrogueCE - Pepr Edition Game
+  ```bash
+  git clone https://github.com/schaeferka/pepr-dungeon-crawl.git
+  ```
 
-The BrogueCE - Pepr Edition game is a deployment that runs a modified version of the classic roguelike dungeon crawler BrogueCE. The initial configuration of the BrogueCE - Pepr Edition game is in the `brogue-pepr-edition` directory of this repository.
+2. Change to the `pepr-dungeon-crawl` directory:
 
-You can deploy the BrogueCE - Pepr Edition game by running the following commands:
+  ```bash
+  cd pepr-dungeon-crawl
+  ```
 
-```bash
-kubectl apply -f brogue-pepr-edition.yaml
-```
+3. Update the hostpath the `pepr-dungeon-master/manifests/pepr-dungeon-crawl-deployment.yaml` file to match the path to the `pepr-dungeon-crawl` directory on your system.
+4. Change to the `pepr-dungeon-master/pepr` directory:
+
+  ```bash
+  cd pepr-dungeon-master/pepr
+  ```
+5. Deploy the Pepr Dungeon Master module to your cluster:
+
+  ```bash
+  npx pepr build
+  ```
+6. Return to the root of the `pepr-dungeon-crawl` directory:
+
+  ```bash
+  cd ../..
+  ```
+7. Use the deploy script to apply the manifests to your cluster:
+
+    ```bash
+    ./deploy.sh
+    ```
+
+8. Wait for the BrogueCE - Pepr Edition game and the Pepr Dungeon Master module to be deployed to your cluster. When the deployments are ready, you should see `Forwarding from [::1]:5900 -> 5900` in the terminal.
 
 ## Play Pepr Dungeon Crawl
 
-After deploying both the BrogueCE - Pepr Edition game and the Pepr Dungeon Master module, you're ready to play Pepr Dungeon Crawl.
+After deploying both the BrogueCE - Pepr Edition game and the Pepr Dungeon Master module as described above, you're ready to play Pepr Dungeon Crawl.
 
-To start the game, start a VNC viewer and connect to localhost:5901. If using the provided image, the password is `pepr`.
+To start the game, start a VNC viewer and connect to `localhost:5900`. If using the provided image, the password is `pepr`.
 
-Once connected, if the game window is already open, just click the `Play Game` button to get started. If the game window is not open, open a terminal and run the following command to start the game:
+Once connected, open a terminal and run the following command to start the game:
 
 ```bash
 ./brogue
