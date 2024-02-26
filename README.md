@@ -2,7 +2,8 @@
 
 <img align="right" width="30%" src="_images/pepr.png" />
 
-## Play the classic roguelike dungeon crawler BrogueCE in your Kubernetes cluster with Pepr acting as the dungeon master to validate and mutate your game (deployments)
+## Play the classic roguelike dungeon crawler BrogueCE in your Kubernetes cluster with Pepr acting as the dungeon master to validate and mutate your game/Kubernetes objects
+
 &nbsp;
 &nbsp;
 **View of terminal and game running in VNC viewer**
@@ -27,7 +28,7 @@ I've been spending a lot of time working with [Pepr](https://github.com/defenseu
 ## Table of Contents
 
 - [Pepr Dungeon Crawl](#pepr-dungeon-crawl)
-  - [Play the classic roguelike dungeon crawler BrogueCE in your Kubernetes cluster with Pepr acting as the dungeon master to validate and mutate your game (deployments)](#play-the-classic-roguelike-dungeon-crawler-broguece-in-your-kubernetes-cluster-with-pepr-acting-as-the-dungeon-master-to-validate-and-mutate-your-game-deployments)
+  - [Play the classic roguelike dungeon crawler BrogueCE in your Kubernetes cluster with Pepr acting as the dungeon master to validate and mutate your game/Kubernetes objects](#play-the-classic-roguelike-dungeon-crawler-broguece-in-your-kubernetes-cluster-with-pepr-acting-as-the-dungeon-master-to-validate-and-mutate-your-gamekubernetes-objects)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
@@ -111,9 +112,9 @@ The Brogue game is a deployment that runs a modified version of the classic rogu
   ```
 7. Use the deploy script to apply the manifests to your cluster:
 
-    ```bash
-    ./deploy.sh
-    ```
+  ```bash
+  ./deploy.sh
+  ```
 
 8. Wait for the BrogueCE - Pepr Edition game and the Pepr Dungeon Master module to be deployed to your cluster. When the deployments are ready, you should see `Forwarding from [::1]:5900 -> 5900` in the terminal.
 
