@@ -45,6 +45,7 @@ The Brogue game is a deployment that runs a modified version of the classic rogu
 - [ ] Represent player inventory as Kubernetes objects
 - [ ] Add a "secret" level that will create monsters to represent other objects in the cluster
 - [ ] Add additional options for adjusting the number of pods for each monster deployment.
+- [ ] Update `brogue-pepr-edition/src/client/deploymentAction.js` to use [kubernetes-fluent-client](https://github.com/defenseunicorns/kubernetes-fluent-client).
 
 ## Installation
 
