@@ -6,12 +6,23 @@
 
 &nbsp;
 &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 **View of terminal and game running in VNC viewer**
 <img align="center" width="100%" src="_images/game-view.png">
-
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 **Pepr Monitor view from `npx pepr monitor`**
 <img align="center" width="100%" src="_images/npx-pepr-monitor.png">
-
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 **K9s view of the cluster**
 <img align="center" width="100%" src="_images/k9s-screenshot.png">
 &nbsp;
