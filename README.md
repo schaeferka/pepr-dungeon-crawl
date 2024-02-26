@@ -4,6 +4,21 @@
 
 ## Play the classic roguelike dungeon crawler BrogueCE in your Kubernetes cluster with Pepr acting as the dungeon master to validate and mutate your game (deployments)
 
+**View of terminal and game running in VNC viewer**
+<img align="center" width="100%" src="_images/game-view.png">
+
+**Pepr Monitor view from `npx pepr monitor`**
+<img align="left" width="45%" src="_images/npx-pepr-monitor.png">
+
+**K9s view of the cluster**
+<img align="right" width="45%" src="_images/k9s-screenshot.png">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
 ## Introduction
 
 I've been spending a lot of time working with [Pepr](https://github.com/defenseunicorns/pepr) and [Kubernetes](https://kubernetes.io). Along the way, I ran into [KubeDoom](https://github.com/storax/kubedoom) which inspired me to find a fun way to explore how Pepr interacts with a cluster using validating and mutating webhooks. The result of this exploration was Pepr Dungeon Crawl.
