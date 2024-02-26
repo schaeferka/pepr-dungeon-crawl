@@ -3,7 +3,8 @@
 <img align="right" width="30%" src="_images/pepr.png" />
 
 ## Play the classic roguelike dungeon crawler BrogueCE in your Kubernetes cluster with Pepr acting as the dungeon master to validate and mutate your game (deployments)
-
+&nbsp;
+&nbsp;
 **View of terminal and game running in VNC viewer**
 <img align="center" width="100%" src="_images/game-view.png">
 
