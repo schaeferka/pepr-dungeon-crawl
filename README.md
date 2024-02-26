@@ -8,10 +8,10 @@
 <img align="center" width="100%" src="_images/game-view.png">
 
 **Pepr Monitor view from `npx pepr monitor`**
-<img align="left" width="45%" src="_images/npx-pepr-monitor.png">
+<img align="center" width="100%" src="_images/npx-pepr-monitor.png">
 
 **K9s view of the cluster**
-<img align="right" width="45%" src="_images/k9s-screenshot.png">
+<img align="center" width="100%" src="_images/k9s-screenshot.png">
 &nbsp;
 &nbsp;
 &nbsp;
