@@ -16,7 +16,7 @@ spec:
       serviceAccountName: monsties-sa
       containers:
       - name: brogue
-        image: kaschaefer/pepr-dungeon-crawl:0.21
+        image: kaschaefer/pepr-dungeon-crawl:0.22
         ports:
         - containerPort: 5900 # for the game/VNC
         - containerPort: 8889 # Match the port your server listens on

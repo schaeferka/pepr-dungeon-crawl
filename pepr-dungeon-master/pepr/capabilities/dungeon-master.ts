@@ -37,7 +37,7 @@ When(a.Deployment)
         error,
         "Failed to get spawnDepth label off deployment in namespace monsties.",
       );
-      dungeonLevel = 30;
+      dungeonLevel = 1;
     }
     deployment.Raw.spec.replicas = parseInt(dungeonLevel, 10);
   });

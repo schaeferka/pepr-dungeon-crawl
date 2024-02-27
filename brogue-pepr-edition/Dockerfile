@@ -67,6 +67,7 @@ RUN mkdir ~/.vnc \
 
 # Expose the VNC port
 EXPOSE 5900
+EXPOSE 5901
 EXPOSE 8888
 EXPOSE 8889
 
