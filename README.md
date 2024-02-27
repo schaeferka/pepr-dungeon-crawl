@@ -45,7 +45,7 @@ Pepr Dungeon Crawl is made up of two main components: the BrogueCE game and the 
 
 The BrogueCE - Pepr Edition game is a deployment that runs a modified version of the classic roguelike dungeon crawler [BrogueCE](https://github.com/tmewett/BrogueCE).
 
-The Pepr Dungeon Master is a Pepr module that uses validating and mutating webhooks to interact with the Brogue game deployment. Pepr is a tool that allows you to easily build and deploy Kubernetes validating and mutating webhooks using a TypeScript file with easy to understand plain-English syntax.
+The Pepr Dungeon Master is a Pepr module that uses validating and mutating webhooks to interact with the Brogue game deployment. [Pepr](https://github.com/defenseunicorns/pepr) is a tool that allows you to easily build and deploy Kubernetes validating and mutating webhooks using a TypeScript file with easy to understand plain-English syntax.
 
 ## Features
 
