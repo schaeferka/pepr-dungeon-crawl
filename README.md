@@ -1,24 +1,31 @@
 # Pepr Dungeon Crawl
 
-<img align="right" width="30%" src="_images/pepr.png" />
+<img align="right" width="30%" src="_assets/pepr.png" />
 
 ## Play the classic roguelike dungeon crawler BrogueCE in your Kubernetes cluster with Pepr acting as the dungeon master to validate and mutate your game/Kubernetes objects
 
 </br>
 </br>
 
-**View of terminal and game running in VNC viewer**
-<img align="center" width="100%" src="_images/game-view.png">
+**Demo Video - Part 1**
+<img align="center" width="100%" src="_assets/pepr-demo-part-1.mov">
 
 </br>
 
-**Pepr Monitor view from `npx pepr monitor`**
-<img align="center" width="100%" src="_images/npx-pepr-monitor.png">
+**Demo Video - Part 2**
+<img align="center" width="100%" src="_assets/pepr-demo-part-2.mov">
 
 </br>
 
-**K9s view of the cluster**
-<img align="center" width="100%" src="_images/k9s-screenshot.png">
+**Pepr Monitor view from `npx pepr monitor` near start of game**
+<img align="center" width="100%" src="_assets/pepr-monitor-view-start.png">
+
+</br>
+
+**Pepr Monitor view from `npx pepr monitor` near end of game**
+<img align="center" width="100%" src="_assets/pepr-monitor-view-end.png">
+
+</br>
 
 ## Introduction
 
