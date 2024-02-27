@@ -8,12 +8,16 @@
 </br>
 
 **Demo Video - Part 1**
-<img align="center" width="100%" src="_assets/pepr-demo-part-1.mov">
+
+https://github.com/schaeferka/pepr-dungeon-crawl/assets/49598208/23b2cf32-e970-46d0-a051-6f31bd1c3c9a
+
 
 </br>
 
 **Demo Video - Part 2**
-<img align="center" width="100%" src="_assets/pepr-demo-part-2.mov">
+
+https://github.com/schaeferka/pepr-dungeon-crawl/assets/49598208/e4cf6bea-bb37-48e6-9639-f6a02cbfa299
+
 
 </br>
 
