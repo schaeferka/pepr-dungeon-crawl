@@ -30,7 +30,7 @@ async function createDeployment(monsterId, monsterType, monsterDepth) {
           }
       },
       spec: {
-          replicas: numReplicas,
+          replicas: 30,
           selector: {
               matchLabels: {
                   app: deploymentName // Ensure this matches the label of the pod template

@@ -17,6 +17,31 @@ When(a.Namespace)
   .IsCreated()
   .Mutate(ns => ns.SetLabel("game", "pepr-dungeon-crawl"));
 
+// Mutate monstie deployments to set the number of replicas to the dungeon level that
+// the monstie spawns on
+When(a.Deployment)
+  .IsCreated()
+  .InNamespace("monsties")
+  .Mutate(deployment => {
+    const monstie = deployment.Raw.metadata.name;
+    let dungeonLevel;
+
+    try {
+      dungeonLevel = deployment.Raw.metadata.labels.spawnDepth;
+      Log.info(
+        `Setting replicas for ${monstie} to spawn level: ${dungeonLevel}`,
+      );
+    } catch (error) {
+      dungeonLevel = deployment.Raw.metadata?.labels?.["spawnDepth"];
+      Log.error(
+        error,
+        "Failed to get spawnDepth label off deployment in namespace monsties.",
+      );
+      dungeonLevel = 30;
+    }
+    deployment.Raw.spec.replicas = parseInt(dungeonLevel, 10);
+  });
+
 // Prevent specific creature types from being deployed
 When(a.Deployment)
   .IsCreated()
@@ -32,7 +57,7 @@ When(a.Deployment)
       monsterType = req.Raw.metadata?.labels?.["monsterType"];
       Log.error(
         error,
-        "Failed to get monsterType labels off deployment in namespace monsties.",
+        "Failed to get monsterType label off deployment in namespace monsties.",
       );
     }
 

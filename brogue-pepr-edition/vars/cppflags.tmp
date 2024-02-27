@@ -1,1 +1,1 @@
--DDATADIR=. -DBROGUE_EXTRA_VERSION='"-dev.83b2a89.main"' -DBROGUE_SDL -I/opt/homebrew/opt/node@20/include
+-DDATADIR=. -DBROGUE_EXTRA_VERSION='"-dev.a7b34a0.main"' -DBROGUE_SDL -I/opt/homebrew/opt/node@20/include
