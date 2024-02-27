@@ -6,7 +6,6 @@
 
 </br>
 </br>
-</br>
 
 **View of terminal and game running in VNC viewer**
 <img align="center" width="100%" src="_images/game-view.png">
@@ -23,7 +22,7 @@
 
 ## Introduction
 
-I've been spending a lot of time working with [Pepr](https://github.com/defenseunicorns/pepr) and [Kubernetes](https://kubernetes.io). Along the way, I ran into [KubeDoom](https://github.com/storax/kubedoom) which inspired me to find a fun way to explore how Pepr interacts with a cluster using validating and mutating webhooks. The result of this exploration was Pepr Dungeon Crawl.
+Lately I've been spending a lot of time working with [Pepr](https://github.com/defenseunicorns/pepr) and [Kubernetes](https://kubernetes.io). Along the way, I ran into [KubeDoom](https://github.com/storax/kubedoom) which inspired me to find a fun way to explore how Pepr interacts with a cluster using validating and mutating webhooks. The result of this exploration was Pepr Dungeon Crawl.
 
 ## Table of Contents
 
@@ -44,7 +43,9 @@ I've been spending a lot of time working with [Pepr](https://github.com/defenseu
 
 Pepr Dungeon Crawl is made up of two main components: the BrogueCE game and the Pepr Dungeon Master.
 
-The Brogue game is a deployment that runs a modified version of the classic roguelike dungeon crawler [BrogueCE](https://github.com/tmewett/BrogueCE). The Pepr Dungeon Master is a Pepr module that uses validating and mutating webhooks to interact with the Brogue game deployment.
+The BrogueCE - Pepr Edition game is a deployment that runs a modified version of the classic roguelike dungeon crawler [BrogueCE](https://github.com/tmewett/BrogueCE).
+
+The Pepr Dungeon Master is a Pepr module that uses validating and mutating webhooks to interact with the Brogue game deployment. Pepr is a tool that allows you to easily build and deploy Kubernetes validating and mutating webhooks using a TypeScript file with easy to understand plain-English syntax.
 
 ## Features
 
@@ -54,7 +55,7 @@ The Brogue game is a deployment that runs a modified version of the classic rogu
 - Deleting deployments in the cluster will kill the corresponding monster in the game
 - Pepr Dungeon Master module uses validating and mutating webhooks to interact with the Brogue game deployment
 - Pepr Dungeon Master module will prevent unwanted monsters from being deployed in the cluster, and will delete the in-game monster when the deployment is rejected. The included configuration will prevent the deployment of "rat", "pink-jelly", and "pit-bloat" monsters  and will delete them from the game.
-- The number of pods for each monster deployment will be equal to the dungeon level on which it was created. For example, a "kobold" monster deployment created on dungeon level 3 will have 3 pods.
+- The number of pods for each monster deployment will be mutated to equal to the dungeon level on which it was created. For example, a "kobold" monster deployment created on dungeon level 3 will have 3 pods.
 
 ### TODO
 
@@ -95,6 +96,8 @@ The Brogue game is a deployment that runs a modified version of the classic rogu
   ```
 
 3. Update the hostpath the `pepr-dungeon-master/manifests/pepr-dungeon-crawl-deployment.yaml` file to match the path to the `pepr-dungeon-crawl` directory on your system.
+<br />
+
 4. Change to the `pepr-dungeon-master/pepr` directory:
 
   ```bash
