@@ -25,3 +25,4 @@ spec:
             value: ":1"
           - name: SDL_VIDEODRIVER
             value: "x11"
+       
