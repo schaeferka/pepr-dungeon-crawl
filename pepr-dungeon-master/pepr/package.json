@@ -1,6 +1,6 @@
 {
-  "name": "dungeon-crawl-module",
-  "version": "0.0.1",
+  "name": "pepr-dungeon-master",
+  "version": "0.0.0",
   "description": "Module for pepr-dungeon-crawl",
   "keywords": [
     "pepr",
@@ -13,7 +13,7 @@
     "node": ">=18.0.0"
   },
   "pepr": {
-    "name": "dungeon-crawl-module",
+    "name": "pepr-dungeon-master",
     "uuid": "3045671d-b4a8-5613-a6ae-9a508a229bdd",
     "onError": "reject",
     "alwaysIgnore": {

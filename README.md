@@ -106,10 +106,11 @@ The Pepr Dungeon Master is a Pepr module that uses validating and mutating webho
   cd pepr-dungeon-crawl
   ```
 
-3. Change to the `pepr-dungeon-master/pepr` directory:
+3. Change to the `pepr-dungeon-master/pepr` directory and install the dependencies:
 
   ```bash
   cd pepr-dungeon-master/pepr
+  npm install
   ```
 
 4. Deploy the Pepr Dungeon Master module to your cluster:

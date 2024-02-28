@@ -1,6 +1,6 @@
 {
-    "name": "dungeon-crawl-app",
-    "version": "1.0.0",
+    "name": "brogue-pepr-edition",
+    "version": "0.0.0",
     "description": "A Kubernetes-managed dungeon crawl app",
     "keywords": [
       "dungeon",
