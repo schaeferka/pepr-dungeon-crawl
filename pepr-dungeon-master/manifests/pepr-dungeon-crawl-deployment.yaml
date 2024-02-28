@@ -25,10 +25,3 @@ spec:
             value: ":1"
           - name: SDL_VIDEODRIVER
             value: "x11"
-        volumeMounts: # Specify where to mount the volume inside the container
-        - name: game-files
-          mountPath: "bin/client" # Specify the target path in the container
-      volumes:
-      - name: game-files
-        hostPath:
-          path: "/Users/kas/projects/pepr-dungeon-crawl/brogue-pepr-edition/bin" # Adjust if necessary

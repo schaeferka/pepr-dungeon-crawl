@@ -106,34 +106,31 @@ The Pepr Dungeon Master is a Pepr module that uses validating and mutating webho
   cd pepr-dungeon-crawl
   ```
 
-3. Update the hostpath the `pepr-dungeon-master/manifests/pepr-dungeon-crawl-deployment.yaml` file to match the path to the `pepr-dungeon-crawl` directory on your system.
-<br />
-
-4. Change to the `pepr-dungeon-master/pepr` directory:
+3. Change to the `pepr-dungeon-master/pepr` directory:
 
   ```bash
   cd pepr-dungeon-master/pepr
   ```
 
-5. Deploy the Pepr Dungeon Master module to your cluster:
+4. Deploy the Pepr Dungeon Master module to your cluster:
 
   ```bash
   npx pepr build
   ```
 
-6. Return to the root of the `pepr-dungeon-crawl` directory:
+5. Return to the root of the `pepr-dungeon-crawl` directory:
 
   ```bash
   cd ../..
   ```
 
-7. Use the deploy script to apply the manifests to your cluster:
+6. Use the deploy script to apply the manifests to your cluster:
 
   ```bash
   ./deploy.sh
   ```
 
-8. Wait for the BrogueCE - Pepr Edition game and the Pepr Dungeon Master module to be deployed to your cluster. When the deployments are ready, you should see `Forwarding from [::1]:5900 -> 5900` in the terminal.
+7. Wait for the BrogueCE - Pepr Edition game and the Pepr Dungeon Master module to be deployed to your cluster. When the deployments are ready, you should see `Forwarding from [::1]:5900 -> 5900` in the terminal.
 
 ## Play Pepr Dungeon Crawl
 
