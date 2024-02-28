@@ -16,7 +16,7 @@ https://github.com/schaeferka/pepr-dungeon-crawl/assets/49598208/23b2cf32-e970-4
 
 **Demo Video - Part 2**
 
-https://github.com/schaeferka/pepr-dungeon-crawl/assets/49598208/e4cf6bea-bb37-48e6-9639-f6a02cbfa299
+https://github.com/schaeferka/pepr-dungeon-crawl/blob/ec29b411b2b1070ea0999a8daae2ebdc8b6fc1c5/_assets/pepr-demo-part-2.mov
 
 
 </br>
