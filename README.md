@@ -16,7 +16,7 @@ https://github.com/schaeferka/pepr-dungeon-crawl/assets/49598208/23b2cf32-e970-4
 
 **Demo Video - Part 2 (showing deletion of monster by deleting deployment through K9s**
 
-https://github.com/schaeferka/pepr-dungeon-crawl/assets/49598208/dba63647-2f00-48e6-b5ac-652303720716
+https://github.com/schaeferka/pepr-dungeon-crawl/assets/49598208/059b2160-87da-4792-9021-62ded2f6b49a
 
 
 </br>
