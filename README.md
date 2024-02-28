@@ -160,5 +160,5 @@ Once connected, open a terminal and run the following command to start the game:
 - **See a monster in the game that you really don't want to fight?** Delete the corresponding deployment in the cluster to kill the monster in the game. For example, to delete the "kobold-8" monster deployment, run the following command:
 
   ```bash
-  kubectl delete deployment kobold-8
+  kubectl delete deployment kobold-8 -n pepr-dungeon-crawl
   ```
